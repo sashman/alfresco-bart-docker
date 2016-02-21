@@ -4,7 +4,7 @@ MAINTAINER Sash <sashman90@gmail.com>
 
 # Install packages required
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    python-pip python-dev wget python-setuptools rsync librsync-dev \
+    python-pip python-dev wget python-setuptools python-lockfile rsync librsync-dev \
     lftp ncftp librsync1 libyaml-0-2 libyaml-dev
 
 # Download and install duplicity
