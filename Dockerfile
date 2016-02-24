@@ -20,8 +20,9 @@ RUN export VERSION=0.7.05 && \
 RUN apt-get install -y mysql-client-5.5 postgresql-client
 
 RUN apt-get install -y git-core
-#RUN git clone https://github.com/toniblyx/alfresco-backup-and-recovery-tool.git 
 RUN git clone https://github.com/sashman/alfresco-backup-and-recovery-tool.git 
 RUN cd /alfresco-backup-and-recovery-tool
-#RUN chmod +x src/alfresco-bart.sh
+ENTRYPOINT ["/alfresco-backup-and-recovery-tool/src/alfresco-bart.sh"]
+CMD ["--help"]
+
 
