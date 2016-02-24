@@ -4,7 +4,7 @@ Dockerized version of [alfresco-backup-and-recovery-tool](https://github.com/ton
 ## Usage
 To run manually: 
 
-```docker run -e ALFBRT_PATH=/config -v=`pwd`/config:/config -it sashman/alfresco-bart-docker```
+``` docker run -e ALFBRT_PATH=/config -v=`pwd`/config:/config -v=`pwd`/backup:/mnt/backup -v=/opt/alfresco:/opt/alfresco -v=/var/run/postgresql:/var/run/postgresql -it sashman/alfresco-bart-docker```
 
 and then 
 
