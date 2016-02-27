@@ -8,7 +8,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     lftp ncftp librsync1 libyaml-0-2 libyaml-dev python-boto
 
 # Download and install duplicity
-RUN export VERSION=0.7.07 && \
+RUN export VERSION=0.7.06 && \
    cd /tmp/ && \
    wget https://code.launchpad.net/duplicity/0.7-series/$VERSION/+download/duplicity-$VERSION.tar.gz && \
    cd /opt/ && \
